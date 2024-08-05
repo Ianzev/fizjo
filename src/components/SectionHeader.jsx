@@ -1,16 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const SectionHeader = ({textAbove, textBelow, textColor}) => {
+const SectionHeader = ({ children }) => {
   return (
     <div
-      className={`text-center font-montserrat text-3xl md:text-4xl md:mb-12 mb-6 ${
-        textColor ? "!text-white" : "text-secondary"
-      }`}
+      className={`text-center font-montserrat text-3xl md:text-4xl md:mb-12 mb-6`}
     >
-      <p className='text-primary'>{textAbove}</p>
-      <p className='font-bold'>{textBelow}</p>
+      {children}
     </div>
   );
-}
+};
 
-export default SectionHeader
+export default SectionHeader;
