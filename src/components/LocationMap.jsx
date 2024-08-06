@@ -11,9 +11,6 @@ const LocationMap = () => {
 
   const positionNiepolomice = { lat: 50.038297, lng: 20.218198 };
 
-  // let mapID = "155b7bcf7276c550";
-  // let apiKey = "AIzaSyAGyFdtilk-qFdMXuMwZZ2OTsH4oWO7FZ0";
-
   return (
     <div className="container flex relative h-[450px] space-x-8">
       <div className="flex-1">
