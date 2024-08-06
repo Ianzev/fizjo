@@ -3,7 +3,7 @@ import { X } from "lucide-react";
 import logo from "../assets/images/logo-fizjopunkt.png";
 import { locations } from "./constants";
 import { APIProvider, Map, AdvancedMarker } from "@vis.gl/react-google-maps";
-import { Clock, Pin, Phone, Mail } from "lucide-react";
+// import { Clock, Pin, Phone, Mail } from "lucide-react";
 
 const LocationMap = () => {
   const [open, setOpen] = useState(false);
@@ -11,20 +11,15 @@ const LocationMap = () => {
 
   const positionNiepolomice = { lat: 50.038297, lng: 20.218198 };
 
-  const data = {
-    id: 1,
-    city: "Niepołomice",
-    postCode: "32-005",
-    street: "ul. Brzeska 28",
-    position: { lat: 50.04259712466961, lng: 20.2199901558195 },
-    contact: "510-045-057",
-  };
-
   return (
     <div className="container flex relative h-[450px] space-x-8">
       <div className="flex-1">
-        <APIProvider apiKey={import.meta.env.REACT_APP_GOOGLE_MAPS_API}>
-          <Map defaultZoom={15} defaultCenter={positionNiepolomice}>
+        <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API}>
+          <Map
+            defaultZoom={15}
+            defaultCenter={positionNiepolomice}
+            mapId={import.meta.env.VITE_GOOGLE_MAPS_MAP_ID}
+          >
             {locations.map((location) => (
               <AdvancedMarker
                 position={location.position}
@@ -32,7 +27,7 @@ const LocationMap = () => {
                   setSelectedLocation(location);
                   setOpen(true);
                 }}
-                key={import.meta.env.REACT_APP_GOOGLE_MAPS_MAPID}
+                key={location.id}
               >
                 <img src={logo} className="h-14"></img>
               </AdvancedMarker>
