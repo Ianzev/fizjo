@@ -15,7 +15,7 @@ const Partners = () => {
   return (
     <>
       <div
-        className="logos flex overflow-hidden py-5 bg-secondary group"
+        className="logos flex overflow-hidden py-12 group"
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >

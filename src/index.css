@@ -14,8 +14,8 @@
 section{
   @apply md:py-12 py-6 px-0
 }
-.navbar {
-  @apply w-full py-[10px] fixed top-0 z-10 !important
+.navbar-section {
+  @apply w-full py-0 fixed top-0 z-10 !important
 }
 .treatments-card-icon-size{
   @apply lg:text-9xl sm:text-8xl text-6xl
@@ -30,8 +30,16 @@ section{
     box-shadow: 1px 1px 20px rgba(119, 204, 102, 0.7),
                 -1px -1px 25px white;
   }
+  .why-us{
+    @apply w-full relative bg-center bg-cover top-0;
+    background-image: linear-gradient(rgba(8, 17, 59, 0.8), rgba(11, 23, 78, 0.8)), url('src/assets/images/offers/seniorzy.jpg');
+  }
+  
 }
 @layer utilities {
+  .paused{
+    animation-play-state: paused;
+  }
   .paused{
     animation-play-state: paused;
   }

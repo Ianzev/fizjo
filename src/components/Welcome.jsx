@@ -44,7 +44,7 @@ const Welcome = () => {
               : "translate-y-full opacity-0"
           }`}
         >
-          <button className="bg-secondary rounded-full py-4 px-4">
+          <button className="bg-secondary rounded-md py-4 px-4">
             Zarezerwuj wizytę
           </button>
         </div>

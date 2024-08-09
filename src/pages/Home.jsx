@@ -9,24 +9,12 @@ import Offers from "../components/Offers";
 import LocationMap from "../components/LocationMap";
 import Footer from "./../components/Footer";
 import Locations from "../components/Locations";
+import WhyUs from "../components/WhyUs";
 
 const Home = () => {
-  const [navbarColor, setNavbarColor] = useState(false);
-  const changeColor = () => {
-    if (window.scrollY >= 90) {
-      setNavbarColor(true);
-    } else {
-      setNavbarColor(false);
-    }
-  };
-  addEventListener("scroll", changeColor);
   return (
     <>
-      <section
-        className={`navbar transition-colors duration-700 ${
-          navbarColor ? "bg-white text-secondary shadow-md" : "text-white"
-        }`}
-      >
+      <section className="navbar-section">
         <Navbar />
       </section>
       <Welcome />
@@ -37,6 +25,13 @@ const Home = () => {
         </SectionHeader>
         <Treatments />
       </section>
+      <section className="why-us">
+        <SectionHeader>
+          <p className="text-primary">Czemu</p>
+          <p className="text-white font-bold">my?</p>
+        </SectionHeader>
+        <WhyUs />
+      </section>
       <section className="">
         <SectionHeader>
           <p className="text-primary">Oferty</p>
@@ -44,14 +39,14 @@ const Home = () => {
         </SectionHeader>
         <Offers />
       </section>
-      <section className="bg-[#f7f7f7]">
+      <section className="bg-third">
         <SectionHeader>
           <p className="text-primary">Nasi</p>
           <p className="text-secondary font-bold">specjaliści</p>
         </SectionHeader>
         <Specialists />
       </section>
-      <section>
+      <section className="">
         <SectionHeader>
           <p className="text-primary">Nasze</p>
           <p className="text-secondary font-bold">lokalizacje</p>
@@ -59,15 +54,9 @@ const Home = () => {
         <LocationMap />
         {/* <Locations /> */}
       </section>
-      <div>
-        <SectionHeader>
-          <p className="text-primary">Nasi</p>
-          <p className="text-secondary font-bold">partnerzy</p>
-        </SectionHeader>
-        <section className="bg-secondary py-0 border">
-          <Partners />
-        </section>
-      </div>
+      <section className="py-0 border-b-2 bg-secondary">
+        <Partners />
+      </section>
       <section className="bg-secondary pb-0">
         <Footer />
       </section>

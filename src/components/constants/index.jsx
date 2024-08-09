@@ -25,6 +25,7 @@ import osteopata from "../../assets/images/treatments/rachiocampsis.png";
 
 import fizjopunkt3maja from "../../assets/images/locations/fizjopunkt-3maj.jpg";
 import fizjopunktBrzeska from "../../assets/images/locations/fizjopunkt-brzeska.jpg";
+import { ShieldCheck } from "lucide-react";
 
 const size = 100;
 
@@ -156,5 +157,26 @@ export const locations = [
     contact: "+48 510 045 057",
     email: "biuro@fizjopunkt.eu",
     photo: fizjopunkt3maja,
+  },
+];
+
+export const whyUs = [
+  {
+    id: 1,
+    title: "Profesjonalizm",
+    text: "Doświadczenie i pasję naszych terapeutów łączymy z indywidualnym podejściem do każdego pacjenta.",
+    icon: <ShieldCheck size={50} />,
+  },
+  {
+    id: 2,
+    title: "Kompleksowość",
+    text: "Fizjopunkt to interdyscyplinarni specjaliści, wykorzystujący szerokie spektrum technik i zabiegów, zapewniając najlepsze efekty.",
+    icon: <ShieldCheck size={50} />,
+  },
+  {
+    id: 3,
+    title: "Jakość",
+    text: "Nasze działania przynoszą zamierzony efekt terapeutyczny, co potwierdzają liczne opinie zadowolonych pacjentów",
+    icon: <ShieldCheck size={50} />,
   },
 ];

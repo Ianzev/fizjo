@@ -43,7 +43,7 @@ const LocationMap = () => {
             <img src={selectedLocation.photo} className="mb-2" />
             <p className="font-bold">{selectedLocation.street}</p>
             <p>
-              {selectedLocation.city}, {selectedLocation.postCode}
+              {selectedLocation.postCode}, {selectedLocation.city}
             </p>
             <p>{selectedLocation.email}</p>
             <p>{selectedLocation.contact}</p>

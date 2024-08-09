@@ -9,7 +9,7 @@ const Specialists = () => {
           <li key={specialist.id}>
             <a
               href="#"
-              className="group flex flex-col bg-white justify-center items-start shadow-md hover:bg-secondary transition-colors overflow-hidden rounded-md"
+              className="group flex flex-col bg-white justify-center items-start shadow-md hover:bg-secondary transition-colors duration-[400ms] ease-in-out overflow-hidden rounded-md"
             >
               <div className="w-full 2xl:h-72 h-[250px] overflow-hidden">
                 <img
@@ -19,7 +19,7 @@ const Specialists = () => {
                 />
               </div>
               <div className="flex flex-col font-montserrat px-2 overflow-hidden xl:py-3 py-2 max-w-xs">
-                <p className="2xl:text-lg md:text-base text-sm  text-secondary font-bold group-hover:text-white transition-colors text-nowrap trancate">
+                <p className="2xl:text-lg md:text-base text-sm  text-secondary font-bold group-hover:text-white transition-colors duration-[400ms] ease-in-out ext-nowrap trancate">
                   {specialist.name}
                 </p>
                 <p className="text-primary xl:text-sm text-[0.8rem] font-semibold">
