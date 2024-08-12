@@ -32,7 +32,7 @@ const size = 100;
 export const navbarLinks = [
   {
     title: "O nas",
-    url: "#o-nas",
+    url: "/o-nas",
   },
   {
     title: "Oferta",

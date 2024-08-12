@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import logo from "../assets/images/logo.png";
 import { navbarLinks } from "./constants";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(true);
-  const [navbarColor, setNavbarColor] = useState(false);
+  const [navbarColor, setNavbarColor] = useState(null);
   const [navIcon, setNavIcon] = useState(false);
+
+
+  const location = useLocation();
 
   const toggleMenu = () => {
     setMenu(!menu);
@@ -31,15 +35,29 @@ const Navbar = () => {
     changeColorNavIcon();
   }, [menu, navbarColor]);
 
-  addEventListener("scroll", changeNavBackground);
+
+  useEffect(() => {
+    if (location.pathname === '/') {
+      setNavbarColor(false)
+      window.addEventListener('scroll', changeNavBackground);
+    } else {
+      setNavbarColor(true)
+      window.removeEventListener('scroll', changeNavBackground);
+    }
+
+    // Cleanup on unmount or path change
+    return () => {
+      window.removeEventListener('scroll', changeNavBackground);
+    };
+  }, [location]);
 
   return (
     <>
       <div
-        className={`absolute w-full py-[10px] duration-[1500ms] z-50 ${
+        className={`absolute w-full py-[10px] duration-[1000ms] z-50 ${
           navbarColor
             ? "bg-white shadow-md transition-colors"
-            : "duration-[2000ms]"
+            : "duration-[1000ms]"
         }`}
       >
         <div className="container">
