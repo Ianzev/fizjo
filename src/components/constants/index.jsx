@@ -1,8 +1,10 @@
-import photo from "../../assets/images/specialists/lekarz.jpeg";
-import kasia from "../../assets/images/specialists/fizjo.jpeg";
-import domka from "../../assets/images/specialists/fizjo2.jpeg";
-import jaro from "../../assets/images/specialists/jaro.jpg";
-import klau from "../../assets/images/specialists/klau.jpg";
+import natalia from "../../assets/images/specialists/natalia.jpg";
+import kasia from "../../assets/images/specialists/kasia.jpg";
+import dominika from "../../assets/images/specialists/dominika.jpg";
+import jarek from "../../assets/images/specialists/jarek.jpg";
+import klaudia from "../../assets/images/specialists/klaudia.jpg";
+import weronika from "../../assets/images/specialists/weronika.jpeg";
+import ania from "../../assets/images/specialists/ania.jpg";
 
 import pzu from "../../assets/images/partners/pzu.png";
 import allianz from "../../assets/images/partners/allianz.png";
@@ -22,10 +24,17 @@ import dietetics from "../../assets/images/treatments/diet.png";
 import accu from "../../assets/images/treatments/acupuncture.png";
 import electo from "../../assets/images/treatments/electric-current.png";
 import osteopata from "../../assets/images/treatments/rachiocampsis.png";
+import dlaFirm from "../../assets/images/treatments/handshake.png";
 
 import fizjopunkt3maja from "../../assets/images/locations/fizjopunkt-3maj.jpg";
 import fizjopunktBrzeska from "../../assets/images/locations/fizjopunkt-brzeska.jpg";
-import { ShieldCheck } from "lucide-react";
+import {
+  CalendarDays,
+  ShieldCheck,
+  Star,
+  ThumbsUp,
+  Trophy,
+} from "lucide-react";
 
 const size = 100;
 
@@ -95,18 +104,43 @@ export const treatments = [
     title: "Pediatria",
     img: pediatrics,
   },
+  {
+    id: 11,
+    title: "Dla firm",
+    img: dlaFirm,
+  },
 ];
 
 export const specialist = [
-  { id: 1, name: "Jarosław Maklakowski", title: "Fizjoterapeuta", photo: jaro },
+  {
+    id: 1,
+    name: "Jarosław Maklakowski",
+    title: "Fizjoterapeuta",
+    photo: jarek,
+  },
   { id: 2, name: "Katarzyna Nowak", title: "Osteopatka", photo: kasia },
-  { id: 3, name: "Dominika Kruszyna", title: "Fizjoterapeutka", photo: domka },
-  { id: 4, name: "Klaudia Rusek", title: "Fizjoterapeutka", photo: klau },
-  { id: 5, name: "John Doe", title: "Osteopata", photo: photo },
-  { id: 6, name: "John Doe", title: "Masazysta", photo: photo },
-  { id: 7, name: "John Doe", title: "Fizjoterapeuta", photo: photo },
+  {
+    id: 3,
+    name: "Dominika Kruszyna",
+    title: "Fizjoterapeutka",
+    photo: dominika,
+  },
+  { id: 4, name: "Klaudia Rusek", title: "Fizjoterapeutka", photo: klaudia },
+  { id: 5, name: "Natalia Polak", title: "Fizjoterapeutka", photo: natalia },
+  {
+    id: 6,
+    name: "Weronika Bryndal",
+    title: "Fizjoterapeutka",
+    photo: weronika,
+  },
+  { id: 7, name: "Anna Kamińska", title: "Terapeutka", photo: ania },
   { id: 8, name: "Katarzyna Nowak", title: "Osteopatka", photo: kasia },
-  { id: 9, name: "Dominika Kruszyna", title: "Fizjoterapeutka", photo: domka },
+  {
+    id: 9,
+    name: "Dominika Kruszyna",
+    title: "Fizjoterapeutka",
+    photo: dominika,
+  },
 ];
 
 export const partners = [
@@ -178,5 +212,54 @@ export const whyUs = [
     title: "Jakość",
     text: "Nasze działania przynoszą zamierzony efekt terapeutyczny, co potwierdzają liczne opinie zadowolonych pacjentów",
     icon: <ShieldCheck size={50} />,
+  },
+];
+
+export const socialProof = [
+  {
+    id: 1,
+    title: "+119",
+    text: "Pozytywnych Opinii na Google",
+    icon: <ThumbsUp size={50} />,
+  },
+  {
+    id: 2,
+    title: "4.6/5",
+    text: "Gwiazdek na Google",
+    icon: <Star size={50} />,
+  },
+  {
+    id: 3,
+    title: "5/5",
+    text: "Ocena na Znany Lekarz",
+    icon: <Trophy size={50} />,
+  },
+  {
+    id: 4,
+    title: "15 Lat",
+    text: "Doświadczenia",
+    icon: <CalendarDays size={50} />,
+  },
+];
+export const opinions = [
+  {
+    id: 1,
+    client: "Izabela Rębilas",
+    text: "Spektrum usług świadczonych w tym miejscu jest naprawdę szerokie. Trafiając tutaj można poczuć się zaopiekowanym na każdym etapie. Panie z recepcji bardzo mile. Szczególnie polecam ortopedę - Pana Sylwestra , który konsultuje dotychczasowe wyniki badań, a także nie ma zahamowań przed poszerzeniem diagnostyki. Stara się znaleźć źródło problemu, rozwiązywać go najmniej inwazyjnymi środkami (operacje, farmakologia). To dzięki niemu poznałam najlepszą do tej pory masazytske -Panią Klaudię, gdzie w tej niepozornej i drobnej osobie drzemie naprawde duza sila. Szczerze polecam",
+  },
+  {
+    id: 2,
+    client: "Michał Musiał",
+    text: "Każdemu polecam Panią Kasie! Trafiliśmy do niej z polecenia z dwumiesięcznym synem, który miał wzmożone napięcie mięśniowe oraz kręcz szyi, przez co był bardzo trudnym dzieckiem. Już po dwóch wizytach syn był nie do poznania. Zaczął lubić pozycje, których wcześniej nie znosił, nie płacze jest spokojny i uśmiechnięty a my z mężem odżyliśmy! Te ręce robią cuda!",
+  },
+  {
+    id: 3,
+    client: "Michał Musiał",
+    text: "Mały Mikołaj jest bardzo zadowolony z wizyt u Pani Kasi. Wszystkie problemy związane ze skróconym wędzidełkiem i napięciem mięśniowym zostały opanowane. Otrzymaliśmy kompleksową pomoc i ćwiczenia do domu, które były bardzo przyjazne dla dziecka. Polecam!",
+  },
+  {
+    id: 4,
+    client: "Michał Musiał",
+    text: "Cieszę się że jest takie miejsce gdzie pacjenta traktują jak człowieka.Bardzo miłe wszystkie Panie i Panowie rehabilitanci. A Pani w rejestracji bardzo życzliwa i pomocna. Bardzo dobry kontakt i terminy wizyt. Bardzo dobre miejsce w Niepołomicach aby podratować zdrowie.",
   },
 ];

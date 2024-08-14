@@ -1,10 +1,12 @@
 import React from "react";
 import { specialist } from "./constants";
+import SectionHeader from "./SectionHeader";
 
 const Specialists = () => {
   return (
     <div className="container">
-      <ul className="grid grid-cols-3 xl:grid-cols-6 lg:grid-cols-4 gap-4">
+      <SectionHeader text={"Nasi"} textGreen={"specjaliści"} />
+      <ul className="grid grid-cols-3 2xl:grid-cols-6 xl:grid-cols-5 lg:grid-cols-4 gap-4">
         {specialist.map((specialist) => (
           <li key={specialist.id}>
             <a

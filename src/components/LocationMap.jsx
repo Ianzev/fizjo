@@ -29,7 +29,10 @@ const LocationMap = () => {
                 }}
                 key={location.id}
               >
-                <img src={logo} className="h-14"></img>
+                <img
+                  src={logo}
+                  className="h-14 bg-white rounded-full p-1"
+                ></img>
               </AdvancedMarker>
             ))}
           </Map>

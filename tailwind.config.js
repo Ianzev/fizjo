@@ -5,14 +5,15 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
+        montserrat: ["Inter", "sans-serif"],
       },
       colors: {
-        primary: "#69ba59",
-        secondary: "#394e79",
+        primary: "#27AE60",
+        secondary: "#313942",
 
         // secondary: "#1e6091",
         third: "#f7f7f7",
+        forth: "#0E231C",
       },
       animation: {
         "loop-scroll": "loop-scroll 45s linear infinite",

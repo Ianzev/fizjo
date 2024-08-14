@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from 'react-router-dom';
-import logo from "../assets/images/logo.png";
+import { useLocation } from "react-router-dom";
+// import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo-duze.png";
 import { navbarLinks } from "./constants";
 
 const Navbar = () => {
-  const [menu, setMenu] = useState(true);
-  const [navbarColor, setNavbarColor] = useState(null);
-  const [navIcon, setNavIcon] = useState(false);
-
+  const [menu, setMenu] = useState(false);
+  const [navbarColor, setNavbarColor] = useState(false);
+  const [navIcon, setNavIcon] = useState(true);
 
   const location = useLocation();
 
@@ -35,49 +35,45 @@ const Navbar = () => {
     changeColorNavIcon();
   }, [menu, navbarColor]);
 
-
   useEffect(() => {
-    if (location.pathname === '/') {
-      setNavbarColor(false)
-      window.addEventListener('scroll', changeNavBackground);
+    if (location.pathname === "/") {
+      window.addEventListener("scroll", changeNavBackground);
     } else {
-      setNavbarColor(true)
-      window.removeEventListener('scroll', changeNavBackground);
+      setNavbarColor(true);
+      window.removeEventListener("scroll", changeNavBackground);
     }
 
     // Cleanup on unmount or path change
     return () => {
-      window.removeEventListener('scroll', changeNavBackground);
+      window.removeEventListener("scroll", changeNavBackground);
     };
   }, [location]);
 
   return (
     <>
       <div
-        className={`absolute w-full py-[10px] duration-[1000ms] z-50 ${
+        className={`absolute w-full py-[10px] z-50 ${
           navbarColor
-            ? "bg-white shadow-md transition-colors"
-            : "duration-[1000ms]"
+            ? "bg-white shadow-md transition-colors duration-[700ms]"
+            : "duration-[700ms]"
         }`}
       >
         <div className="container">
           <div className="flex items-center">
             <div className="flex flex-1 justify-start">
               <a href="#">
-                <img src={logo} className="h-10"></img>
+                <img src={logo} className="h-16"></img>
               </a>
             </div>
             <div className="flex flex-1 justify-end">
               <ul
-                className={`lg:flex hidden gap-10 xl:text-lg text-base font-montserrat uppercase ${
-                  navbarColor
-                    ? "transition-colors text-secondary "
-                    : "transition-colors text-white"
+                className={`lg:flex hidden gap-10 xl:text-lg text-base font-montserrat uppercase transition-colors ${
+                  navbarColor ? "text-secondary " : "text-white"
                 }`}
               >
                 {navbarLinks.map((link) => (
                   <a
-                    className="text-nowrap transition-all duration-700 ease-in-out hover:text-primary"
+                    className="text-nowrap transition-all duration-500 ease-in-out hover:text-primary"
                     key={link.title}
                     href={link.url}
                   >
@@ -90,7 +86,7 @@ const Navbar = () => {
                 className="lg:hidden block justify-end cursor-pointer group"
               >
                 <div
-                  className={`w-8 h-[3px] m-[5px] transition-all duration-1000 
+                  className={`w-8 h-[3px] m-[5px] transition-all duration-[700ms] 
                     ${menu ? "transform rotate-45 translate-y-2" : ""} 
                     ${
                       navIcon ? "bg-white" : "bg-secondary"
@@ -98,7 +94,7 @@ const Navbar = () => {
                 ></div>
 
                 <div
-                  className={`w-8 h-[3px] m-[5px] transition-all duration-1000 
+                  className={`w-8 h-[3px] m-[5px] transition-all duration-[700ms] 
                     ${menu ? "opacity-0" : ""}
                     ${
                       navIcon ? "bg-white" : "bg-secondary"
@@ -106,7 +102,7 @@ const Navbar = () => {
                 ></div>
 
                 <div
-                  className={`w-8 h-[3px] m-[5px] transition-all duration-1000  
+                  className={`w-8 h-[3px] m-[5px] transition-all duration-[700ms]  
                     ${menu ? "transform -rotate-45 -translate-y-2 " : ""}
                     ${
                       navIcon ? "bg-white" : "bg-secondary"

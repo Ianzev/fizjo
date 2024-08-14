@@ -28,7 +28,7 @@ const Partners = () => {
               key={partner.id}
               src={partner.logo}
               alt={partner.alt}
-              className="md:h-16 h-16 md:mx-20 mx-10 hover:opacity-70 "
+              className="h-12 mx-10 opacity-50 "
             ></img>
           ))}
         </div>
@@ -41,7 +41,7 @@ const Partners = () => {
               key={partner.id}
               src={partner.logo}
               alt={partner.alt}
-              className="md:h-16 h-16 md:mx-20 mx-10 hover:opacity-70 "
+              className="h-12 mx-10 opacity-50 "
             ></img>
           ))}
         </div>

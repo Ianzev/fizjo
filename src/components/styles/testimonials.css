@@ -1,0 +1,16 @@
+/* Hide slick arrows */
+.slick-prev, .slick-next {
+    display: none !important;
+  }
+  
+  /* Ensure that hovered, focused, and active states are consistent */
+  .slick-dots li button:before {
+    color: #27AE60; /* Normal state color */
+    font-size: 1rem !important; /* Optional: Change the size of the dots */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #27AE60; /* Active dot color */
+  }
+  
+  

@@ -1,12 +1,13 @@
-import React from "react";
 import seniorzy from "../assets/images/offers/seniorzy.jpg";
 import { specialOffers } from "./constants";
 import { CircleCheck } from "lucide-react";
+import SectionHeader from "./SectionHeader";
 
 const Offers = () => {
   return (
     <div className="container">
-      <div className="flex lg:flex-row flex-col justify-center items-center gap-8 font-montserrat text-secondary 2xl:mx-20">
+      <SectionHeader text={"Oferty"} textGreen={"specjalne"} />
+      <div className="flex lg:flex-row flex-col justify-center items-center gap-8 font-montserrat text-secondary">
         <div className="flex-1">
           <img src={seniorzy} className="rounded-lg object-cover"></img>
         </div>
@@ -18,7 +19,7 @@ const Offers = () => {
               </div>
               <div className="space-y-4">
                 <p className="font-bold text-2xl ">{offer.name}</p>
-                <p className="text-sm text-justify">{offer.text}</p>
+                <p className="text text-justify">{offer.text}</p>
               </div>
             </div>
           ))}
