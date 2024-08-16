@@ -20,13 +20,13 @@ const Testimonials = () => {
 
   return (
     <div className="container items-center md:pb-12 pb-6">
-      <div className=" bg-forth rounded-2xl p-12">
-        <SectionHeader text={"Klienci o"} textGreen={"nas"} white={true} />
+      <div className=" bg-[#EDF9F2] rounded-2xl p-12">
+        <SectionHeader text={"Klienci o"} textGreen={"nas"} />
         <Slider {...settings} className="xl:mx-40">
           {opinions.map((opinion) => (
             <div
               key={opinion.id}
-              className="text-center font-montserrat text-white space-y-4 lg:px-12"
+              className="text-center font-montserrat text-secondary space-y-4 lg:px-12"
             >
               <p className="lg:text-xl md:text-lg text-base">{opinion.text}</p>
               <p className="lg:text-2xl text-xl font-semibold text-primary">

@@ -4,12 +4,11 @@ import Welcome from "../components/Welcome";
 import Treatments from "../components/Treatments";
 import Specialists from "../components/Specialists";
 import Partners from "../components/Partners";
-import SectionHeader from "../components/SectionHeader";
 import Offers from "../components/Offers";
-import LocationMap from "../components/LocationMap";
 import Footer from "./../components/Footer";
 import Locations from "../components/Locations";
 import WhyUs from "../components/WhyUs";
+import WhyUs2 from "../components/WhyUs2";
 import SocialProof from "../components/SocialProof";
 import Testimonials from "../components/Testimonials";
 
@@ -24,7 +23,7 @@ const Home = () => {
         <Treatments />
       </section>
       <section className="">
-        <WhyUs />
+        <WhyUs2 />
       </section>
       <section className="bg-third">
         <Specialists />
