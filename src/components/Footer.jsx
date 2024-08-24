@@ -11,8 +11,8 @@ const Footer = () => {
           <p className="text-xl mb-3">Twoje zdrowie, nasza pasja.</p>
         </div>
       </div>
-      <div className="flex mx-80 text-center">
-        <div className="flex flex-col items-center  w-1/3">
+      <div className="flex xl:mx-80 lg:mx-40 text-center justify-between">
+        <div className="flex flex-col items-center">
           <div>
             <p className="font-bold text-xl mb-3">Informacje</p>
             <p>O nas</p>
@@ -22,7 +22,7 @@ const Footer = () => {
             <p>Oferta dla firm</p>
           </div>
         </div>
-        <div className="flex flex-col items-center w-1/3">
+        <div className="flex flex-col items-center">
           <div>
             <p className="font-bold text-xl mb-3">Informacje</p>
             <p>O nas</p>
@@ -32,7 +32,7 @@ const Footer = () => {
             <p>Oferta dla firm</p>
           </div>
         </div>
-        <div className="flex flex-col items-center w-1/3">
+        <div className="flex flex-col items-center">
           <div>
             <p className="font-bold text-xl mb-3">Informacje</p>
             <p>O nas</p>

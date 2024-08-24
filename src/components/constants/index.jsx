@@ -34,6 +34,7 @@ import {
   Star,
   ThumbsUp,
   Trophy,
+  Settings,
 } from "lucide-react";
 
 const size = 100;
@@ -205,13 +206,13 @@ export const whyUs = [
     id: 2,
     title: "Kompleksowość",
     text: "Fizjopunkt to interdyscyplinarni specjaliści, wykorzystujący szerokie spektrum technik i zabiegów, zapewniając najlepsze efekty.",
-    icon: <ShieldCheck size={50} />,
+    icon: <Settings size={50} />,
   },
   {
     id: 3,
     title: "Jakość",
     text: "Nasze działania przynoszą zamierzony efekt terapeutyczny, co potwierdzają liczne opinie zadowolonych pacjentów",
-    icon: <ShieldCheck size={50} />,
+    icon: <Star size={50} />,
   },
 ];
 

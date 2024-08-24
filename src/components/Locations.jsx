@@ -20,13 +20,13 @@ const Locations = () => {
         <div className="flex-1 object-cover">
           <img
             src={fizjopunkt3maja}
-            className="lg:h-full w-full object-cover rounded-2xl"
+            className="lg:h-full w-full object-cover rounded-xl"
           ></img>
         </div>
         <div className="flex flex-col flex-1 gap-8">
           <div className="flex flex-col gap-4 font-montserrat text-[#fffcfc] p-4 divide-y-2 divide-white divide-dashed bg-[#1A3029] rounded-xl">
             <div className="flex items-center gap-2">
-              <img src={logo} className="h-14 bg-white rounded-full"></img>
+              <img src={logo} className="h-14 bg-white rounded-full p-1"></img>
               <p className="text-3xl font-montserrat font-bold text-white">
                 Fizjopunkt
               </p>
@@ -87,7 +87,7 @@ const Locations = () => {
               </div>
             </div>
           </div>
-          <div className="relative h-[400px] w-full">
+          <div className="relative h-[400px] w-full rounded-xl overflow-hidden">
             <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API}>
               <Map
                 defaultZoom={15}

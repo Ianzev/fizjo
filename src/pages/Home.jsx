@@ -28,7 +28,7 @@ const Home = () => {
       <section className="bg-third">
         <Specialists />
       </section>{" "}
-      <section className="bg-forth">
+      <section className="social-proof">
         <SocialProof />
       </section>
       <section className="">

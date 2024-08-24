@@ -61,7 +61,7 @@ const Navbar = () => {
         <div className="container">
           <div className="flex items-center">
             <div className="flex flex-1 justify-start">
-              <a href="#">
+              <a href="/">
                 <img src={logo} className="h-16"></img>
               </a>
             </div>

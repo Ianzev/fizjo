@@ -4,7 +4,7 @@ import { socialProof } from "./constants";
 const SocialProof = () => {
   return (
     <div className="container">
-      <ul className="flex md:flex-row flex-col justify-between xl:mx-32 gap-16">
+      <ul className="grid grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-4 lg:gap-x-20">
         {socialProof.map((reason) => (
           <div
             key={reason.id}
