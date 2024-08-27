@@ -12,7 +12,7 @@ const LocationMap = () => {
   const positionNiepolomice = { lat: 50.038297, lng: 20.218198 };
 
   return (
-    <div className="container flex relative h-[450px] space-x-8">
+    <div className="flex relative h-[450px] space-x-8">
       <div className="flex-1">
         <APIProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API}>
           <Map

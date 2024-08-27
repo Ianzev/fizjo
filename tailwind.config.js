@@ -15,6 +15,10 @@ export default {
         third: "#f7f7f7",
         forth: "#0E231C",
       },
+      height: {
+        '1/2-screen': '50vh',
+        '1/3-screen': '25vh'
+      },
       animation: {
         "loop-scroll": "loop-scroll 45s linear infinite",
       },

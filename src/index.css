@@ -20,9 +20,11 @@ section {
 }
 
 .navbar-section {
-  @apply w-full py-0 fixed top-0 z-10 !important;
+  @apply w-full py-0 top-0 z-10 !important;
 }
-
+.footer-section {
+  @apply w-full py-0 fixed bottom-0 !important;
+}
 .treatments-card-icon-size {
   @apply lg:text-9xl sm:text-8xl text-6xl;
 }

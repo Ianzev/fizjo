@@ -3,7 +3,7 @@ import React from "react";
 const SectionHeader = ({ text, textGreen, white }) => {
   return (
     <div
-      className={`text-center font-montserrat text-3xl md:text-6xl mb-6 md:mb-12 font-bold ${
+      className={`text-center font-montserrat text-4xl md:text-6xl mb-6 md:mb-12 font-bold ${
         white ? "text-white" : "text-secondary"
       }`}
     >

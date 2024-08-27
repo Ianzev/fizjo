@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`absolute w-full py-[10px] z-50 ${
+        className={`relative w-full py-[10px] z-50 ${
           navbarColor
             ? "bg-white shadow-md transition-colors duration-[700ms]"
             : "duration-[700ms]"

@@ -35,7 +35,7 @@ const Welcome = () => {
               : "translate-y-full opacity-0"
           }`}
         >
-          Centrum sportowo-rehabilitacyjne <br />w Niepołomicach
+          Centrum Rehabilitacyjno-Sportowe <br />w Niepołomicach
         </div>
         {/* <div
           className={`duration-1000 delay-[2000ms] ease-in-out text-xl ${
