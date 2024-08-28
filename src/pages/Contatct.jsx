@@ -1,10 +1,11 @@
 import Footer from "../components/Footer";
 import LocationMap from "../components/LocationMap";
 import Navbar from "../components/Navbar";
-import ContactForm from "./../components/ContactForm";
+import ContactForm from "../components/ContactForm";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Clock, MapPin, Phone, Mail } from "lucide-react";
 
-const AboutUs = () => {
+const Contact = () => {
   return (
     <>
       <section className="navbar-section fixed">
@@ -16,16 +17,16 @@ const AboutUs = () => {
       `}
         >
           <h1 className="items-center text-white">
-            O <span className="text-primary">nas</span>
+            Kon<span className="text-primary">takt</span>
           </h1>
         </div>
       </section>
       <section className="">
-        <div className="container grid grid-cols-2 gap-20">
-          <div>
+        <div className="container grid xl:grid-cols-2 grid-row-2 gap-20">
+          <div className="xl:order-first">
             <ContactForm />
           </div>
-          <div className="flex flex-col gap-4 font-montserrat text-secondary rounded-xl">
+          <div className="flex flex-col gap-4 font-montserrat text-secondary rounded-xl order-first">
             <div className="flex flex-col items-left">
               <p className="text-lg font-bold text-primary">Masz pytanie?</p>
               <p className="text-3xl font-bold text-secondary">
@@ -82,7 +83,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-20">
+            <div className="flex gap-20 text-nowrap">
               <div className="flex flex-1 py-2 gap-2">
                 <div className="mt-[1px]">
                   <Clock size={25} className="text-primary" />
@@ -124,45 +125,19 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="flex py-2 gap-8">
+            <div className="flex flex-col items-left text-secondary">
+              <p className="text-lg font-bold ">Śledź nas na:</p>
               <div className="flex gap-2">
-                <div className="mt-[2px]">
-                  <MapPin size={20} />
-                </div>
-                <div>
-                  <p>ul. 3 Maja 7A</p>
-                  <p>32-005, Niepołomice</p>
-                </div>
-              </div>
-              <div className="flex gap-2">
-                <div className="mt-[2px]">
-                  <Clock size={20} />
-                </div>
-                <div>
-                  <p>Pon - Pt 08:00 - 20:00</p>
-                </div>
+                <FaFacebook
+                  size={30}
+                  className="opacity-80 hover:opacity-100"
+                />
+                <FaInstagram
+                  size={32}
+                  className="opacity-80 hover:opacity-100"
+                />
               </div>
             </div>
-            <div className="flex py-2 gap-8">
-              <div className="flex gap-2">
-                <div className="mt-[2px]">
-                  <MapPin size={20} />
-                </div>
-                <div>
-                  <p>ul. Brzeska 28</p>
-                  <p>32-005, Niepołomice</p>
-                </div>
-              </div>
-              <div className="flex gap-2">
-                <div className="mt-[2px]">
-                  <Clock size={20} />
-                </div>
-                <div>
-                  <p>Pon - Pt 08:00 - 20:00</p>
-                  <p>Sob&nbsp; 08:00 - 14:00</p>
-                </div>
-              </div> */}
-            {/* </div> */}
           </div>
         </div>
       </section>
@@ -176,4 +151,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Contact;

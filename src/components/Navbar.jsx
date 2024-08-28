@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   const changeNavBackground = () => {
-    if (window.scrollY >= 180) {
+    if (window.scrollY >= 90) {
       setNavbarColor(true);
     } else {
       setNavbarColor(false);
@@ -35,19 +35,28 @@ const Navbar = () => {
     changeColorNavIcon();
   }, [menu, navbarColor]);
 
+  // useEffect(() => {
+  //   if (location.pathname === "/") {
+  //     window.addEventListener("scroll", changeNavBackground);
+  //   } else {
+  //     setNavbarColor(true);
+  //     window.removeEventListener("scroll", changeNavBackground);
+  //   }
+
+  //   // Cleanup on unmount or path change
+  //   return () => {
+  //     window.removeEventListener("scroll", changeNavBackground);
+  //   };
+  // }, [location]);
+
   useEffect(() => {
-    if (location.pathname === "/") {
-      window.addEventListener("scroll", changeNavBackground);
-    } else {
-      setNavbarColor(true);
-      window.removeEventListener("scroll", changeNavBackground);
-    }
+    window.addEventListener("scroll", changeNavBackground);
 
     // Cleanup on unmount or path change
     return () => {
       window.removeEventListener("scroll", changeNavBackground);
     };
-  }, [location]);
+  }, []); // No dependency on location, so it's always active
 
   return (
     <>
@@ -62,7 +71,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex flex-1 justify-start">
               <a href="/">
-                <img src={logo} className="h-16"></img>
+                <img src={logo} className="h-12"></img>
               </a>
             </div>
             <div className="flex flex-1 justify-end">

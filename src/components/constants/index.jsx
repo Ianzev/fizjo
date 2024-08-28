@@ -46,11 +46,11 @@ export const navbarLinks = [
   },
   {
     title: "Oferta",
-    url: "#oferta",
+    url: "/oferta",
   },
   {
     title: "Kontakt",
-    url: "#kontakt",
+    url: "/kontakt",
   },
 ];
 

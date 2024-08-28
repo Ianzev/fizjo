@@ -1,10 +1,14 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Clock, MapPin, Phone, Mail } from "lucide-react";
 
-const Footer = () => {
+const Footer = ({ white }) => {
   let currentYear = new Date().getFullYear();
   return (
-    <div className="container flex flex-col justify-items-center text-secondary font-montserrat gap-8">
+    <div
+      className={`container flex flex-col justify-items-center ${
+        white ? "text-[#fffcfc]" : "text-secondary"
+      } font-montserrat gap-8`}
+    >
       <div className="flex flex-col items-center text-center">
         <div>
           <p className="font-bold text-3xl">Fizjopunkt</p>

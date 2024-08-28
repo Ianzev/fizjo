@@ -16,8 +16,8 @@ export default {
         forth: "#0E231C",
       },
       height: {
-        '1/2-screen': '50vh',
-        '1/3-screen': '25vh'
+        "1/2-screen": "50vh",
+        "1/3-screen": "40vh",
       },
       animation: {
         "loop-scroll": "loop-scroll 45s linear infinite",
