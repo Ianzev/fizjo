@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-// import logo from "../assets/images/logo.png";
-import logo from "../assets/images/logo-duze.png";
+import logoSVG from "../assets/images/logo1.svg";
+import logo from "../assets/images/logo-normal-fizjopunkt.png";
+import logoWhite from "../assets/images/logo-white-fizjopunkt.png";
 import { navbarLinks } from "./constants";
 
 const Navbar = () => {
@@ -70,8 +71,47 @@ const Navbar = () => {
         <div className="container">
           <div className="flex items-center">
             <div className="flex flex-1 justify-start">
-              <a href="/">
-                <img src={logo} className="h-12"></img>
+              <a href="/" className="transition-all">
+                {/* <div
+                  className={` ${
+                    navbarColor ? "hidden delay-700" : "visible delay-700"
+                  }`}
+                >
+                  <img
+                    src={logoWhite}
+                    className={`h-16 transition-opacity ${
+                      navbarColor ? "opacity-0" : "opacity-100"
+                    }`}
+                  ></img>
+                </div>
+                <div
+                  className={`delay-700 ${
+                    navbarColor ? "visible delay-700" : "hidden delay-700"
+                  }`}
+                >
+                  <img
+                    src={logo}
+                    className={`h-16 transition-opacity ${
+                      navbarColor ? "opacity-100" : "opacity-0"
+                    }`}
+                  ></img>
+                </div> */}
+                <img
+                  src={logoSVG}
+                  className={`h-16`}
+                  style={{
+                    "--cls-1-fill": "#ffffff", // Change .cls-1 fill color
+                    "--cls-2-fill": "#ffffff",
+                    "--cls-3-fill": "#ffffff",
+                    "--cls-4-fill": "#ffffff",
+                    "--cls-5-fill": "#ffffff",
+                    "--cls-6-fill": "#ffffff",
+                    "--cls-7-fill": "#ffffff",
+                    "--cls-8-fill": "#ffffff",
+                    "--cls-9-fill": "#ffffff",
+                    "--cls-10-fill": "#ffffff", // Change .cls-2 fill color
+                  }}
+                ></img>
               </a>
             </div>
             <div className="flex flex-1 justify-end">

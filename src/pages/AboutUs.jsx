@@ -169,7 +169,7 @@ const AboutUs = () => {
       <section className="py-0">
         <LocationMap />
       </section>
-      <section className="bg-forth pb-0">
+      <section className="footer pb-0">
         <Footer white={true} />
       </section>
     </>
