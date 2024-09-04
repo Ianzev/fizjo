@@ -19,7 +19,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="container items-center md:pb-12 pb-6">
+    <div className="container items-center">
       <div className=" bg-[#EDF9F2] rounded-2xl p-12">
         <SectionHeader text={"Klienci o"} textGreen={"nas"} />
         <Slider {...settings} className="xl:mx-40">

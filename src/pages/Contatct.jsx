@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import ContactForm from "../components/ContactForm";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Clock, MapPin, Phone, Mail } from "lucide-react";
+import Partners from "../components/Partners";
 
 const Contact = () => {
   return (
@@ -11,7 +12,7 @@ const Contact = () => {
       <section className="navbar-section fixed">
         <Navbar />
       </section>
-      <section className="relative social-proof h-1/3-screen">
+      <section className="relative contact h-1/3-screen">
         <div
           className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center font-montserrat text-4xl md:text-6xl font-bold text-nowrap
       `}
@@ -144,7 +145,9 @@ const Contact = () => {
       <section className="py-0">
         <LocationMap />
       </section>
-      <section className="bg-forth pb-0">
+
+      <section className="footer py-0">
+        <Partners />
         <Footer white={true} />
       </section>
     </>

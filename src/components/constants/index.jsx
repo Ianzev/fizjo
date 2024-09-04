@@ -237,7 +237,7 @@ export const socialProof = [
   },
   {
     id: 4,
-    title: "15 Lat",
+    title: "10 Lat",
     text: "Doświadczenia",
     icon: <CalendarDays size={50} />,
   },
@@ -262,5 +262,44 @@ export const opinions = [
     id: 4,
     client: "Michał Musiał",
     text: "Cieszę się że jest takie miejsce gdzie pacjenta traktują jak człowieka.Bardzo miłe wszystkie Panie i Panowie rehabilitanci. A Pani w rejestracji bardzo życzliwa i pomocna. Bardzo dobry kontakt i terminy wizyt. Bardzo dobre miejsce w Niepołomicach aby podratować zdrowie.",
+  },
+];
+
+export const timeLine = [
+  {
+    id: 1,
+    date: "Luty, 2014",
+    title: "Lorem",
+    text: "Spektrum usług świadczonych w tym miejscu jest naprawdę szerokie. Trafiając tutaj można poczuć się zaopiekowanym na każdym etapie. Panie z recepcji bardzo mile. Szczególnie polecam ortopedę - Pana Sylwestra",
+  },
+  {
+    id: 2,
+    date: "Marzec, 2015",
+    title: "Lorem",
+    text: "Spektrum usług świadczonych w tym miejscu jest naprawdę szerokie. Trafiając tutaj można poczuć się zaopiekowanym na każdym etapie. Panie z recepcji bardzo mile. Szczególnie polecam ortopedę - Pana Sylwestra",
+  },
+  {
+    id: 3,
+    date: "Luty, 2017",
+    title: "Lorem",
+    text: "Spektrum usług świadczonych w tym miejscu jest naprawdę szerokie. Trafiając tutaj można poczuć się zaopiekowanym na każdym etapie. Panie z recepcji bardzo mile. Szczególnie polecam ortopedę - Pana Sylwestra",
+  },
+  {
+    id: 4,
+    date: "Maj, 2019",
+    title: "Lorem",
+    text: "Spektrum usług świadczonych w tym miejscu jest naprawdę szerokie. Trafiając tutaj można poczuć się zaopiekowanym na każdym etapie. Panie z recepcji bardzo mile. Szczególnie polecam ortopedę - Pana Sylwestra",
+  },
+  {
+    id: 5,
+    date: "Listopad, 2021",
+    title: "Lorem",
+    text: "Spektrum usług świadczonych w tym miejscu jest naprawdę szerokie. Trafiając tutaj można poczuć się zaopiekowanym na każdym etapie. Panie z recepcji bardzo mile. Szczególnie polecam ortopedę - Pana Sylwestra",
+  },
+  {
+    id: 6,
+    date: "Luty, 2024",
+    title: "Lorem",
+    text: "Spektrum usług świadczonych w tym miejscu jest naprawdę szerokie. Trafiając tutaj można poczuć się zaopiekowanym na każdym etapie. Panie z recepcji bardzo mile. Szczególnie polecam ortopedę - Pana Sylwestra",
   },
 ];

@@ -72,7 +72,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex flex-1 justify-start">
               <a href="/" className="transition-all">
-                {/* <div
+                <div
                   className={` ${
                     navbarColor ? "hidden delay-700" : "visible delay-700"
                   }`}
@@ -95,23 +95,7 @@ const Navbar = () => {
                       navbarColor ? "opacity-100" : "opacity-0"
                     }`}
                   ></img>
-                </div> */}
-                <img
-                  src={logoSVG}
-                  className={`h-16`}
-                  style={{
-                    "--cls-1-fill": "#ffffff", // Change .cls-1 fill color
-                    "--cls-2-fill": "#ffffff",
-                    "--cls-3-fill": "#ffffff",
-                    "--cls-4-fill": "#ffffff",
-                    "--cls-5-fill": "#ffffff",
-                    "--cls-6-fill": "#ffffff",
-                    "--cls-7-fill": "#ffffff",
-                    "--cls-8-fill": "#ffffff",
-                    "--cls-9-fill": "#ffffff",
-                    "--cls-10-fill": "#ffffff", // Change .cls-2 fill color
-                  }}
-                ></img>
+                </div>
               </a>
             </div>
             <div className="flex flex-1 justify-end">

@@ -50,25 +50,30 @@ section {
     background-image: linear-gradient(to bottom right, hsla(160, 50%, 20%, 0.90), rgba(14, 35, 28, 0.90) 50%), url('src/assets/images/offers/fizjo.jpg');
     background-position: center 20%;
   }
+  .contact {
+    @apply w-full bg-cover;
+    background-image: linear-gradient(to bottom right, hsla(160, 50%, 20%, 0.90), rgba(14, 35, 28, 0.90) 50%), url('src/assets/images/contact.jpg');
+    background-position: center;
+  }
 
   .footer {
     @apply w-full bg-cover;
     background-image: linear-gradient(to bottom right, hsla(160, 50%, 20%, 1), rgba(14, 35, 28, 1) 50%); }
-    
-  .slick-dots li.slick-active button:before {
-    color:red !important;
-  }
-  .slick-dots li button:before {
-    color:red !important;
-  }
+}
+
+.circle::after{
+  content: " ";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #0E231C; /* Or use Tailwind classes for this */
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
 
-
-
-@layer utilities {
-  .paused {
-    animation-play-state: paused;
-  }
-}

@@ -25,65 +25,88 @@ const Locations = () => {
         </div>
         <div className="flex flex-col flex-1 gap-8">
           <div className="flex flex-col gap-4 font-montserrat text-[#fffcfc] p-4 divide-y-2 divide-white divide-dashed bg-[#1A3029] rounded-xl">
-            <div className="flex items-center gap-2">
-              <img src={logo} className="h-14 bg-white rounded-full p-1"></img>
-              <p className="text-3xl font-montserrat font-bold text-white">
-                Fizjopunkt
-              </p>
-            </div>
-            <div className="flex py-2 gap-8">
-              <div className="flex gap-2">
-                <div className="mt-[2px]">
-                  <MapPin size={20} />
+            <div className="flex gap-20">
+              <div className="flex flex-1 py-2 gap-2">
+                <div className="mt-[1px]">
+                  <MapPin size={25} className="text-primary" />
                 </div>
                 <div>
+                  <p className="text-xl font-bold">Adres</p>
                   <p>ul. 3 Maja 7A</p>
                   <p>32-005, Niepołomice</p>
                 </div>
               </div>
-              <div className="flex gap-2">
-                <div className="mt-[2px]">
-                  <Clock size={20} />
+              <div className="flex flex-1 py-2 gap-2">
+                <div className="mt-[1px]">
+                  <MapPin size={25} className="text-primary" />
                 </div>
                 <div>
-                  <p>Pon - Pt 08:00 - 20:00</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex py-2 gap-8">
-              <div className="flex gap-2">
-                <div className="mt-[2px]">
-                  <MapPin size={20} />
-                </div>
-                <div>
+                  <p className="text-xl font-bold">Adres</p>
                   <p>ul. Brzeska 28</p>
                   <p>32-005, Niepołomice</p>
                 </div>
               </div>
-              <div className="flex gap-2">
-                <div className="mt-[2px]">
-                  <Clock size={20} />
+            </div>
+            <div className="flex gap-20 text-nowrap">
+              <div className="flex flex-1 py-2 gap-2">
+                <div className="mt-[1px]">
+                  <Clock size={25} className="text-primary" />
                 </div>
                 <div>
-                  <p>Pon - Pt 08:00 - 20:00</p>
-                  <p>Sob&nbsp; 08:00 - 14:00</p>
+                  <p className="text-xl font-bold">Godziny otwarcia</p>
+                  <div className="flex gap-4">
+                    <div>
+                      <p>Pon - Pt</p>
+                      <p>Sobota</p>
+                      <p>Niedziela</p>
+                    </div>
+                    <div>
+                      <p>08:00 - 20:00</p>
+                      <p>Nieczynne</p>
+                      <p>Nieczynne</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-1 py-2 gap-2">
+                <div className="mt-[1px]">
+                  <Clock size={25} className="text-primary" />
+                </div>
+                <div>
+                  <p className="text-xl font-bold">Godziny otwarcia</p>
+                  <div className="flex gap-4">
+                    <div>
+                      <p>Pon - Pt</p>
+                      <p>Sobota</p>
+                      <p>Niedziela</p>
+                    </div>
+                    <div>
+                      <p>08:00 - 20:00</p>
+                      <p>08:00 - 14:00</p>
+                      <p>Nieczynne</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="flex py-2 gap-2">
-              <div className="mt-[2px]">
-                <Mail size={20} />
+            <div className="flex gap-20">
+              <div className="flex flex-1 py-2 gap-2">
+                <div className="mt-[1px]">
+                  <Mail size={25} className="text-primary" />
+                </div>
+                <div>
+                  <p className="text-xl font-bold">Email</p>
+                  <p>biuro@fizjopunkt.eu</p>
+                </div>
               </div>
-              <div>
-                <p>biuro@fizjopunkt.eu</p>
-              </div>
-            </div>
-            <div className="flex py-2 gap-2">
-              <div className="mt-[2px]">
-                <Phone size={20} />
-              </div>
-              <div>
-                <p>+48 510 045 057</p>
+              <div className="flex flex-1 py-2 gap-2">
+                <div className="mt-[1px]">
+                  <Phone size={25} className="text-primary" />
+                </div>
+                <div>
+                  <p className="text-xl font-bold">Telefon</p>
+                  <p>+48 796778502</p>
+                </div>
               </div>
             </div>
           </div>
