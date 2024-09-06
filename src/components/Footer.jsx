@@ -51,7 +51,7 @@ const Footer = ({ white }) => {
         <FaFacebook size={30} className="opacity-40 hover:opacity-100" />
         <FaInstagram size={32} className="opacity-40 hover:opacity-100" />
       </div>
-      <div className="text-center">
+      <div className="text-center sm:text-base text-xs">
         Copyright © Fizjopunkt Niepołomice | {currentYear} All rights reserved
       </div>
     </div>

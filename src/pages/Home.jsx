@@ -15,7 +15,7 @@ import Testimonials from "../components/Testimonials";
 const Home = () => {
   return (
     <>
-      <section className="navbar-section fixed">
+      <section className="py-0">
         <Navbar />
       </section>
       <Welcome />

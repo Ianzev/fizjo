@@ -17,25 +17,25 @@ const ImgPhoto = () => {
       </div>
 
       <div className="grid lg:grid-cols-4 grid-cols-2 w-full justify-center items-center gap-4">
-        <div className="relative rounded-xl shadow-lg h-[400px] w-full overflow-hidden">
+        <div className="relative rounded-xl shadow-lg md:h-[400px] sm:h-[300px] h-[220px] w-full overflow-hidden">
           <img
             src={photo2}
             className="absolute inset-0 object-cover w-full h-full"
           />
         </div>
-        <div className="relative rounded-xl shadow-lg h-[450px] w-full overflow-hidden">
+        <div className="relative rounded-xl shadow-lg md:h-[450px] sm:h-[350px] h-[250px] w-full overflow-hidden">
           <img
             src={photo3}
             className="absolute inset-0 object-cover w-full h-full"
           />
         </div>
-        <div className="relative rounded-xl shadow-lg h-[400px] w-full overflow-hidden lg:order-3 order-4">
+        <div className="relative rounded-xl shadow-lg md:h-[400px] sm:h-[300px] h-[220px] w-full overflow-hidden lg:order-3 order-4">
           <img
             src={photo1}
             className="absolute inset-0 object-cover w-full h-full"
           />
         </div>
-        <div className="relative rounded-xl shadow-lg h-[450px] w-full overflow-hidden lg:order-4 order-3">
+        <div className="relative rounded-xl shadow-lg md:h-[450px] sm:h-[350px] h-[250px] w-full overflow-hidden lg:order-4 order-3">
           <img
             src={photo4}
             className="absolute inset-0 object-cover w-full h-full"

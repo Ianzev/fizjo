@@ -19,9 +19,9 @@ section {
   @apply md:py-12 py-6 px-0;
 }
 
-.navbar-section {
+/* .navbar-section {
   @apply w-full py-0 top-0 z-10 !important;
-}
+} */
 .footer-section {
   @apply w-full py-0 fixed bottom-0 !important;
 }
@@ -73,6 +73,23 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.timeline::after{
+  content: " ";
+  position: absolute;
+  background: #27AE60;
+  width: 6px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px){
+  .timeline::after{
+    left:31px;
+  }
 }
 
 

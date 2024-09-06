@@ -28,6 +28,9 @@ export default {
           to: { transform: "translateX(-100%)" },
         },
       },
+      screens: {
+        sm: "576px",
+      },
     },
   },
 

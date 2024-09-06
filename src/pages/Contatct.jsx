@@ -9,7 +9,7 @@ import Partners from "../components/Partners";
 const Contact = () => {
   return (
     <>
-      <section className="navbar-section fixed">
+      <section className="py-0">
         <Navbar />
       </section>
       <section className="relative contact h-1/3-screen">
@@ -27,13 +27,13 @@ const Contact = () => {
           <div className="xl:order-first">
             <ContactForm />
           </div>
-          <div className="flex flex-col gap-4 font-montserrat text-secondary rounded-xl order-first">
+          <div className="flex flex-col gap-4 font-montserrat text-secondary rounded-xl order-first sm:text-base text-xs">
             <div className="flex flex-col items-left">
               <p className="text-lg font-bold text-primary">Masz pytanie?</p>
               <p className="text-3xl font-bold text-secondary">
                 Skontaktuj się z nami
               </p>
-              <p className="text-sm mt-2">
+              <p className="mt-2">
                 Masz pytania lub wątpliwości? Jesteśmy tutaj, aby Ci pomóc!
                 Jeśli potrzebujesz więcej informacji o naszych usługach, chcesz
                 umówić się na wizytę, czy po prostu skonsultować swoje
@@ -42,84 +42,88 @@ const Contact = () => {
                 najlepsze rozwiązania. Czekamy na Twój kontakt!
               </p>
             </div>
-            <div className="flex gap-20">
+            <div className="flex justify-between">
               <div className="flex flex-1 py-2 gap-2">
                 <div className="mt-[1px]">
-                  <Mail size={25} className="text-primary" />
+                  <Mail size={20} className="text-primary" />
                 </div>
                 <div>
-                  <p className="text-xl font-bold">Email</p>
+                  <p className="sm:text-xl text-base font-bold">Email</p>
                   <p>biuro@fizjopunkt.eu</p>
                 </div>
               </div>
               <div className="flex flex-1 py-2 gap-2">
                 <div className="mt-[1px]">
-                  <Phone size={25} className="text-primary" />
+                  <Phone size={20} className="text-primary" />
                 </div>
                 <div>
-                  <p className="text-xl font-bold">Telefon</p>
+                  <p className="sm:text-xl text-base font-bold">Telefon</p>
                   <p>+48 796778502</p>
                 </div>
               </div>
             </div>
-            <div className="flex gap-20">
+            <div className="flex  justify-between">
               <div className="flex flex-1 py-2 gap-2">
                 <div className="mt-[1px]">
-                  <MapPin size={25} className="text-primary" />
+                  <MapPin size={20} className="text-primary" />
                 </div>
                 <div>
-                  <p className="text-xl font-bold">Adres</p>
+                  <p className="sm:text-xl text-base font-bold">Adres</p>
                   <p>ul. 3 Maja 7A</p>
                   <p>32-005, Niepołomice</p>
                 </div>
               </div>
               <div className="flex flex-1 py-2 gap-2">
                 <div className="mt-[1px]">
-                  <MapPin size={25} className="text-primary" />
+                  <Clock size={20} className="text-primary" />
                 </div>
                 <div>
-                  <p className="text-xl font-bold">Adres</p>
-                  <p>ul. Brzeska 28</p>
-                  <p>32-005, Niepołomice</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex gap-20 text-nowrap">
-              <div className="flex flex-1 py-2 gap-2">
-                <div className="mt-[1px]">
-                  <Clock size={25} className="text-primary" />
-                </div>
-                <div>
-                  <p className="text-xl font-bold">Godziny otwarcia</p>
-                  <div className="flex gap-4">
+                  <p className="sm:text-xl text-base font-bold">
+                    Godziny otwarcia
+                  </p>
+                  <div className="flex justify-between sm:gap-4">
                     <div>
                       <p>Pon - Pt</p>
                       <p>Sobota</p>
                       <p>Niedziela</p>
                     </div>
                     <div>
-                      <p>08:00 - 20:00</p>
+                      <p>8:00 - 20:00</p>
                       <p>Nieczynne</p>
                       <p>Nieczynne</p>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="flex  justify-between">
               <div className="flex flex-1 py-2 gap-2">
                 <div className="mt-[1px]">
-                  <Clock size={25} className="text-primary" />
+                  <MapPin size={20} className="text-primary" />
                 </div>
                 <div>
-                  <p className="text-xl font-bold">Godziny otwarcia</p>
-                  <div className="flex gap-4">
+                  <p className="sm:text-xl text-base font-bold">Adres</p>
+                  <p>ul. Brzeska 28</p>
+                  <p>32-005, Niepołomice</p>
+                </div>
+              </div>
+              <div className="flex flex-1 py-2 gap-2">
+                <div className="mt-[1px]">
+                  <Clock size={20} className="text-primary" />
+                </div>
+                <div>
+                  <p className="sm:text-xl text-base font-bold">
+                    Godziny otwarcia
+                  </p>
+                  <div className="flex justify-between sm:gap-4">
                     <div>
                       <p>Pon - Pt</p>
                       <p>Sobota</p>
                       <p>Niedziela</p>
                     </div>
                     <div>
-                      <p>08:00 - 20:00</p>
-                      <p>08:00 - 14:00</p>
+                      <p>8:00 - 20:00</p>
+                      <p>8:00 - 14:00</p>
                       <p>Nieczynne</p>
                     </div>
                   </div>
@@ -146,8 +150,7 @@ const Contact = () => {
         <LocationMap />
       </section>
 
-      <section className="footer py-0">
-        <Partners />
+      <section className="footer pb-0">
         <Footer white={true} />
       </section>
     </>

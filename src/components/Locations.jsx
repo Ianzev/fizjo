@@ -25,7 +25,7 @@ const Locations = () => {
         </div>
         <div className="flex flex-col flex-1 gap-8">
           <div className="flex flex-col gap-4 font-montserrat text-[#fffcfc] p-4 divide-y-2 divide-white divide-dashed bg-[#1A3029] rounded-xl">
-            <div className="flex gap-20">
+            <div className="flex sm:flex-row flex-col justify-between">
               <div className="flex flex-1 py-2 gap-2">
                 <div className="mt-[1px]">
                   <MapPin size={25} className="text-primary" />
@@ -36,18 +36,6 @@ const Locations = () => {
                   <p>32-005, Niepołomice</p>
                 </div>
               </div>
-              <div className="flex flex-1 py-2 gap-2">
-                <div className="mt-[1px]">
-                  <MapPin size={25} className="text-primary" />
-                </div>
-                <div>
-                  <p className="text-xl font-bold">Adres</p>
-                  <p>ul. Brzeska 28</p>
-                  <p>32-005, Niepołomice</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex gap-20 text-nowrap">
               <div className="flex flex-1 py-2 gap-2">
                 <div className="mt-[1px]">
                   <Clock size={25} className="text-primary" />
@@ -68,7 +56,20 @@ const Locations = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="flex sm:flex-row flex-col justify-between">
               <div className="flex flex-1 py-2 gap-2">
+                <div className="mt-[1px]">
+                  <MapPin size={25} className="text-primary" />
+                </div>
+                <div>
+                  <p className="text-xl font-bold">Adres</p>
+                  <p>ul. Brzeska 28</p>
+                  <p>32-005, Niepołomice</p>
+                </div>
+              </div>
+
+              <div className="flex flex-1 py-2 gap-2 overflow-hidden">
                 <div className="mt-[1px]">
                   <Clock size={25} className="text-primary" />
                 </div>
@@ -89,7 +90,7 @@ const Locations = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-20">
+            <div className="flex sm:flex-row flex-col justify-between">
               <div className="flex flex-1 py-2 gap-2">
                 <div className="mt-[1px]">
                   <Mail size={25} className="text-primary" />

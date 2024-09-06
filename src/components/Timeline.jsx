@@ -3,39 +3,43 @@ import SectionHeader from "./SectionHeader";
 
 const Timeline = () => {
   return (
-    <div className="container w-full">
+    <div className="container">
       <SectionHeader text={"Nasza"} textGreen={"historia"} />
-      <ul className={`flex flex-col w-full relative pt-8`}>
+      <div className="timeline md:m-0 mt-12 relative">
         {timeLine.map((timeEvent, index) => (
           <div
-            className={`flex w-full ${
-              index % 2 === 0 ? "lg:justify-start" : "lg:justify-end"
-            } justify-end`}
+            className={`kontener relative md:w-1/2 w-full md:px-8 pl-20 pr-6 mb-12 ${
+              index % 2 === 0 ? "left-0" : "md:left-1/2"
+            }`}
             key={timeEvent.id}
           >
-            <li
-              className={`relative lg:w-[48%] w-[96%] h-auto p-4 bg-white shadow-xl rounded-xl mb-12 font-montserrat text-secondary`}
+            <span
+              className={`circle size-[40px] bg-primary absolute rounded-full top-8 bg-opacity-60 left-[10px] ${
+                index % 2 === 0 ? "md:-right-5 md:left-auto" : "md:-left-5"
+              }`}
+            />
+
+            <div
+              className={`text-box relative p-4 rounded-xl bg-white shadow-md shadow-primary font-montserrat text-secondary md:mb-12`}
             >
-              <h1 className="title font-semibold text-3xl text-primary">
+              <h1 className="title font-semibold md:text-3xl text-2xl text-primary">
                 {timeEvent.title}
               </h1>
-              <p className="text-lg">{timeEvent.text}</p>
-              <span
-                className={`circle size-8 bg-primary bg-opacity-40 absolute top-0 rounded-full ${
-                  index % 2 === 0
-                    ? "transform -translate-x-1/2 2xl:-right-[62px] xl:-right-[57px] lg:-right-[52px] md:right-[704px] right-[576px]"
-                    : "transform translate-x-1/2 2xl:-left-[62px] xl:-left-[56px] lg:-left-[51px] md:-left-[61px] -left-[56px]"
-                }`}
-              ></span>
+              <p className="md:text-lg text-sm">{timeEvent.text}</p>
 
-              <span className="absolute top-[-2.5rem] left-[4px] bg-forth text-white w-36 h-8 items-center justify-center flex rounded-xl">
+              <span
+                className={`absolute md:-top-10 -top-[30px] left-[4px] bg-forth text-white md:w-36 md:h-8 w-28 h-6 items-center justify-center flex rounded-xl md:text-base text-sm ${
+                  index % 2 === 0
+                    ? "md:right-[4px] md:left-auto"
+                    : "md:left-[4px]"
+                }`}
+              >
                 {timeEvent.date}
               </span>
-            </li>
+            </div>
           </div>
         ))}
-        <span className="w-1 absolute bg-primary h-full top-0 lg:left-1/2 transform -translate-x-1/2 -z-10"></span>
-      </ul>
+      </div>
     </div>
   );
 };

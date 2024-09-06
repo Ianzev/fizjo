@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import logoSVG from "../assets/images/logo1.svg";
 import logo from "../assets/images/logo-normal-fizjopunkt.png";
 import logoWhite from "../assets/images/logo-white-fizjopunkt.png";
 import { navbarLinks } from "./constants";
@@ -62,7 +61,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`relative w-full py-[10px] z-50 ${
+        className={`fixed w-full py-[10px] z-50 top-0 ${
           navbarColor
             ? "bg-white shadow-md transition-colors duration-[700ms]"
             : "duration-[700ms]"
@@ -71,36 +70,28 @@ const Navbar = () => {
         <div className="container">
           <div className="flex items-center">
             <div className="flex flex-1 justify-start">
-              <a href="/" className="transition-all">
-                <div
-                  className={` ${
-                    navbarColor ? "hidden delay-700" : "visible delay-700"
-                  }`}
-                >
-                  <img
-                    src={logoWhite}
-                    className={`h-16 transition-opacity ${
-                      navbarColor ? "opacity-0" : "opacity-100"
-                    }`}
-                  ></img>
-                </div>
-                <div
-                  className={`delay-700 ${
-                    navbarColor ? "visible delay-700" : "hidden delay-700"
-                  }`}
-                >
-                  <img
-                    src={logo}
-                    className={`h-16 transition-opacity ${
-                      navbarColor ? "opacity-100" : "opacity-0"
-                    }`}
-                  ></img>
-                </div>
+              <a href="/" className="relative transition-all">
+                <img
+                  src={logoWhite}
+                  className={`lg:h-16 h-12 opacity-0 `}
+                ></img>
+                <img
+                  src={logoWhite}
+                  className={`absolute lg:h-16 h-12 transition-opacity duration-[700ms] top-0 ${
+                    navbarColor ? "opacity-0 " : "opacity-100 "
+                  } ${navIcon ? "opacity-100" : "opacity-0"}`}
+                ></img>
+                <img
+                  src={logo}
+                  className={`absolute lg:h-16 h-12 transition-opacity duration-[700ms] top-0 ${
+                    navbarColor ? "opacity-100 " : "opacity-0"
+                  } ${navIcon ? "opacity-0" : "opacity-100"}`}
+                ></img>
               </a>
             </div>
             <div className="flex flex-1 justify-end">
               <ul
-                className={`lg:flex hidden gap-10 xl:text-lg text-base font-montserrat uppercase transition-colors ${
+                className={`md:flex hidden gap-10 xl:text-lg text-base font-montserrat uppercase transition-colors ${
                   navbarColor ? "text-secondary " : "text-white"
                 }`}
               >
@@ -116,7 +107,7 @@ const Navbar = () => {
               </ul>
               <div
                 onClick={toggleMenu}
-                className="lg:hidden block justify-end cursor-pointer group"
+                className="md:hidden block justify-end cursor-pointer group"
               >
                 <div
                   className={`w-8 h-[3px] m-[5px] transition-all duration-[700ms] 
@@ -147,7 +138,7 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`fixed top-0 w-screen bg-white transition-all duration-[1500ms] lg:hidden z-10 ${
+        className={`fixed top-0 w-full bg-white transition-all duration-[1500ms] lg:hidden z-10 ${
           menu ? "h-screen " : "h-0 overflow-hidden"
         }`}
       >
