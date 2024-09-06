@@ -59,56 +59,243 @@ export const treatments = [
     id: 1,
     title: "Osteopatia",
     img: osteopata,
+    treatments: [
+      {
+        id: 1,
+        title: "Piersza wizyta",
+        description: "Wywiad, diagnostyka, terapia",
+        time: "40min",
+        price: 200,
+      },
+      {
+        id: 2,
+        title: "Każda następna wizyta",
+        description:
+          "Terapia w zależności od potrzeb pacjenta: strukturalna, wisceralna bądź kranio-sakralna",
+        time: "30min",
+        price: 180,
+      },
+    ],
   },
   {
     id: 2,
     title: "Kobido",
     img: kobido,
+    treatments: [
+      {
+        id: 1,
+        title: "Piersza wizyta",
+        description: "Wywiad, diagnostyka, terapia",
+        time: "40min",
+        price: 200,
+      },
+      {
+        id: 2,
+        title: "Każda następna wizyta",
+        description:
+          "Terapia w zależności od potrzeb pacjenta: strukturalna, wisceralna bądź kranio-sakralna",
+        time: "30min",
+        price: 180,
+      },
+    ],
   },
   {
     id: 3,
     title: "Masaż",
     img: bodymsg,
+    treatments: [
+      {
+        id: 1,
+        title: "Piersza wizyta",
+        description: "Wywiad, diagnostyka, terapia",
+        time: "40min",
+        price: 200,
+      },
+      {
+        id: 2,
+        title: "Każda następna wizyta",
+        description:
+          "Terapia w zależności od potrzeb pacjenta: strukturalna, wisceralna bądź kranio-sakralna",
+        time: "30min",
+        price: 180,
+      },
+    ],
   },
   {
     id: 4,
     title: "Fizykoterapia",
     img: electo,
+    treatments: [
+      {
+        id: 1,
+        title: "Piersza wizyta",
+        description: "Wywiad, diagnostyka, terapia",
+        time: "40min",
+        price: 200,
+      },
+      {
+        id: 2,
+        title: "Każda następna wizyta",
+        description:
+          "Terapia w zależności od potrzeb pacjenta: strukturalna, wisceralna bądź kranio-sakralna",
+        time: "30min",
+        price: 180,
+      },
+    ],
   },
   {
     id: 5,
     title: "Urolog",
     img: urologist,
+    treatments: [
+      {
+        id: 1,
+        title: "Piersza wizyta",
+        description: "Wywiad, diagnostyka, terapia",
+        time: "40min",
+        price: 200,
+      },
+      {
+        id: 2,
+        title: "Każda następna wizyta",
+        description:
+          "Terapia w zależności od potrzeb pacjenta: strukturalna, wisceralna bądź kranio-sakralna",
+        time: "30min",
+        price: 180,
+      },
+    ],
   },
   {
     id: 6,
     title: "Fizjoterapia",
     img: fizjo,
+    treatments: [
+      {
+        id: 1,
+        title: "Piersza wizyta",
+        description: "Wywiad, diagnostyka, terapia",
+        time: "40min",
+        price: 200,
+      },
+      {
+        id: 2,
+        title: "Każda następna wizyta",
+        description:
+          "Terapia w zależności od potrzeb pacjenta: strukturalna, wisceralna bądź kranio-sakralna",
+        time: "30min",
+        price: 180,
+      },
+    ],
   },
   {
     id: 7,
     title: "Suche igłowanie",
     img: accu,
+    treatments: [
+      {
+        id: 1,
+        title: "Piersza wizyta",
+        description: "Wywiad, diagnostyka, terapia",
+        time: "40min",
+        price: 200,
+      },
+      {
+        id: 2,
+        title: "Każda następna wizyta",
+        description:
+          "Terapia w zależności od potrzeb pacjenta: strukturalna, wisceralna bądź kranio-sakralna",
+        time: "30min",
+        price: 180,
+      },
+    ],
   },
   {
     id: 8,
     title: "Ortopedia",
     img: orthopedics,
+    treatments: [
+      {
+        id: 1,
+        title: "Piersza wizyta",
+        description: "Wywiad, diagnostyka, terapia",
+        time: "40min",
+        price: 200,
+      },
+      {
+        id: 2,
+        title: "Każda następna wizyta",
+        description:
+          "Terapia w zależności od potrzeb pacjenta: strukturalna, wisceralna bądź kranio-sakralna",
+        time: "30min",
+        price: 180,
+      },
+    ],
   },
   {
     id: 9,
     title: "Dietetyka",
     img: dietetics,
+    treatments: [
+      {
+        id: 1,
+        title: "Piersza wizyta",
+        description: "Wywiad, diagnostyka, terapia",
+        time: "40min",
+        price: 200,
+      },
+      {
+        id: 2,
+        title: "Każda następna wizyta",
+        description:
+          "Terapia w zależności od potrzeb pacjenta: strukturalna, wisceralna bądź kranio-sakralna",
+        time: "30min",
+        price: 180,
+      },
+    ],
   },
   {
     id: 10,
     title: "Pediatria",
     img: pediatrics,
+    treatments: [
+      {
+        id: 1,
+        title: "Piersza wizyta",
+        description: "Wywiad, diagnostyka, terapia",
+        time: "40min",
+        price: 200,
+      },
+      {
+        id: 2,
+        title: "Każda następna wizyta",
+        description:
+          "Terapia w zależności od potrzeb pacjenta: strukturalna, wisceralna bądź kranio-sakralna",
+        time: "30min",
+        price: 180,
+      },
+    ],
   },
   {
     id: 11,
     title: "Dla firm",
     img: dlaFirm,
+    treatments: [
+      {
+        id: 1,
+        title: "Piersza wizyta",
+        description: "Wywiad, diagnostyka, terapia",
+        time: "40min",
+        price: 200,
+      },
+      {
+        id: 2,
+        title: "Każda następna wizyta",
+        description:
+          "Terapia w zależności od potrzeb pacjenta: strukturalna, wisceralna bądź kranio-sakralna",
+        time: "30min",
+        price: 180,
+      },
+    ],
   },
 ];
 
