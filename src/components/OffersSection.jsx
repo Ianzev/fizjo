@@ -39,14 +39,17 @@ const Offers = () => {
               transition={{ duration: 0.3 }}
               style={{ overflow: "hidden" }}
             >
-              <div className="py-2">
+              <div className="py-2 divide-y-2">
                 {treatment.treatments.map((unit, j) => (
-                  <div key={j} className="mb-2">
-                    <div className="font-semibold">{unit.title}</div>
+                  <div key={j} className="py-4">
+                    <div className="flex justify-between">
+                      <p className="font-semibold">{unit.title}</p>
+                      <p className="font-semibold">{unit.price} PLN</p>
+                    </div>
+
                     <div className="flex flex-col text-sm">
-                      <p>{unit.description}</p>
-                      <p>{unit.price}PLN</p>
                       <p>{unit.time}</p>
+                      <p>{unit.description}</p>
                     </div>
                   </div>
                 ))}
