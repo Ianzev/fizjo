@@ -19,15 +19,22 @@ const Offers = () => {
       <SectionHeader text={"Oferta w naszym "} textGreen={"centrum"} />
       <div>
         {treatments.map((treatment, i) => (
-          <div key={i} className="mb-2 p-4 border-2">
+          <div className="flex flex-col mb-2 border-2">
             <div
-              className="flex justify-between cursor-pointer"
+              key={i}
+              className={`w-full h-full p-4 bg-secondary text-white ${
+                selectedOffer === i ? "border-b-2" : "border-b-0"
+              }`}
               onClick={() => toggleOffer(i)}
             >
-              <p className="font-bold">{treatment.title}</p>
-              <p className="font-bold">
-                {selectedOffer === i ? "Zwiń" : "Rozwiń"}
-              </p>
+              <div className="flex justify-between cursor-pointer">
+                <p className="font-bold hover:text-primary ease-in-out transition-colors">
+                  {treatment.title}
+                </p>
+                <p className="font-bold hover:text-primary ease-in-out transition-colors">
+                  {selectedOffer === i ? "Zwiń" : "Rozwiń"}
+                </p>
+              </div>
             </div>
             {/* Animation with framer-motion */}
             <motion.div
@@ -39,9 +46,9 @@ const Offers = () => {
               transition={{ duration: 0.3 }}
               style={{ overflow: "hidden" }}
             >
-              <div className="py-2 divide-y-2">
+              <div className="px-4 divide-y-2">
                 {treatment.treatments.map((unit, j) => (
-                  <div key={j} className="py-4">
+                  <div key={j} className="py-2">
                     <div className="flex justify-between">
                       <p className="font-semibold">{unit.title}</p>
                       <p className="font-semibold">{unit.price} PLN</p>
