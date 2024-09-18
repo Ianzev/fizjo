@@ -1,46 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .container {
-  @apply my-0 mx-auto py-0 px-4
+  @apply my-0 mx-auto py-0 px-4;
 }
-*, *::after, *::before{
-  @apply box-border
+
+*, *::after, *::before {
+  @apply box-border;
 }
-section{
-  @apply md:py-12 py-6 px-0
+
+section {
+  @apply md:py-12 py-6 px-0;
 }
-.navbar-section {
-  @apply w-full py-0 fixed top-0 z-10 !important
+
+/* .navbar-section {
+  @apply w-full py-0 top-0 z-10 !important;
+} */
+.footer-section {
+  @apply w-full py-0 fixed bottom-0 !important;
 }
-.treatments-card-icon-size{
-  @apply lg:text-9xl sm:text-8xl text-6xl
+.treatments-card-icon-size {
+  @apply lg:text-9xl sm:text-8xl text-6xl;
 }
 
 @layer components {
-  .welcome{
-    @apply w-full min-h-screen relative bg-center bg-cover bg-fixed top-0;
+  .welcome {
+    @apply w-full min-h-screen relative bg-center bg-cover bg-fixed;
     background-image: linear-gradient(to bottom, rgba(4, 22, 8, 0.8), rgba(0, 58, 13, 0.6)), url('src/assets/images/welcome/fizjopunkt.jpg');
   }
+
   .treatment-shadow:hover {
-    box-shadow: 1px 1px 20px rgba(119, 204, 102, 0.7),
-                -1px -1px 25px white;
+    @apply shadow-lg;
+    box-shadow: 1px 1px 20px rgba(119, 204, 102, 0.7), -1px -1px 25px white;
   }
-  .why-us{
-    @apply w-full relative bg-center bg-cover top-0;
+
+  .why-us {
+    @apply w-full bg-center bg-cover;
     background-image: linear-gradient(rgba(8, 17, 59, 0.8), rgba(11, 23, 78, 0.8)), url('src/assets/images/offers/seniorzy.jpg');
   }
-  
-}
-@layer utilities {
-  .paused{
-    animation-play-state: paused;
+
+  .social-proof {
+    @apply w-full bg-cover;
+    background-image: linear-gradient(to bottom right, hsla(160, 50%, 20%, 0.90), rgba(14, 35, 28, 0.90) 50%), url('src/assets/images/offers/fizjo.jpg');
+    background-position: center 20%;
   }
-  .paused{
-    animation-play-state: paused;
+  .contact {
+    @apply w-full bg-cover;
+    background-image: linear-gradient(to bottom right, hsla(160, 50%, 20%, 0.90), rgba(14, 35, 28, 0.90) 50%), url('src/assets/images/contact.jpg');
+    background-position: center;
+  }
+
+  .footer {
+    @apply w-full bg-cover;
+    background-image: linear-gradient(to bottom right, hsla(160, 50%, 20%, 1), rgba(14, 35, 28, 1) 50%); }
+}
+
+.circle::after{
+  content: " ";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #0E231C; /* Or use Tailwind classes for this */
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.timeline::after{
+  content: " ";
+  position: absolute;
+  background: #27AE60;
+  width: 6px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px){
+  .timeline::after{
+    left:31px;
   }
 }
+
+
+

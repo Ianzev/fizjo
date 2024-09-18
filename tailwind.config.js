@@ -5,14 +5,19 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
+        montserrat: ["Inter", "sans-serif"],
       },
       colors: {
-        primary: "#69ba59",
-        secondary: "#394e79",
+        primary: "#27AE60",
+        secondary: "#313942",
 
         // secondary: "#1e6091",
         third: "#f7f7f7",
+        forth: "#0E231C",
+      },
+      height: {
+        "1/2-screen": "50vh",
+        "1/3-screen": "40vh",
       },
       animation: {
         "loop-scroll": "loop-scroll 45s linear infinite",
@@ -23,7 +28,11 @@ export default {
           to: { transform: "translateX(-100%)" },
         },
       },
+      screens: {
+        sm: "576px",
+      },
     },
   },
+
   plugins: [],
 };

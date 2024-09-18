@@ -1,11 +1,15 @@
 import React from "react";
 
-const SectionHeader = ({ children }) => {
+const SectionHeader = ({ text, textGreen, white }) => {
   return (
     <div
-      className={`text-center font-montserrat text-3xl md:text-4xl md:mb-12 mb-6`}
+      className={`text-center font-montserrat text-4xl md:text-6xl mb-6 md:mb-12 font-bold ${
+        white ? "text-white" : "text-secondary"
+      }`}
     >
-      {children}
+      <h1 className="items-center">
+        {text} <span className="text-primary">{textGreen}</span>
+      </h1>
     </div>
   );
 };

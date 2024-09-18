@@ -14,10 +14,10 @@ const Welcome = () => {
   }, []);
 
   return (
-    <div className="welcome relative">
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-montserrat text-white text-center text-nowrap transition-all">
+    <div className="welcome">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-montserrat text-white text-center text-nowrap transition-transform">
         <div
-          className={`duration-1000 ease-in-out xl:text-9xl md:text-7xl text-5xl font-bold mb-5 ${
+          className={`duration-[1500ms] ease-in-out xl:text-9xl md:text-8xl text-7xl font-bold mb-5 ${
             isVisible
               ? "translate-y-0 opacity-100"
               : "translate-y-full opacity-0"
@@ -29,24 +29,13 @@ const Welcome = () => {
           </div>
         </div>
         <div
-          className={`duration-1000 delay-1000 ease-in-out xl:text-6xl md:text-4xl text-3xl mb-5 ${
+          className={`duration-[1500ms] delay-[1500ms] ease-in-out xl:text-6xl md:text-4xl sm:text-3xl text-xl ${
             isVisible
               ? "translate-y-0 opacity-100"
               : "translate-y-full opacity-0"
           }`}
         >
-          Centrum sportowo-rehabilitacyjne <br />w Niepołomicach
-        </div>
-        <div
-          className={`duration-1000 delay-[2000ms] ease-in-out text-xl ${
-            isVisible
-              ? "translate-y-0 opacity-100"
-              : "translate-y-full opacity-0"
-          }`}
-        >
-          <button className="bg-secondary rounded-md py-4 px-4">
-            Zarezerwuj wizytę
-          </button>
+          Centrum Rehabilitacyjno-Sportowe <br />w Niepołomicach
         </div>
       </div>
     </div>
