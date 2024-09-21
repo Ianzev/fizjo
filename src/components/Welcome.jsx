@@ -16,7 +16,7 @@ const Welcome = () => {
 
   return (
     <div
-      className="welcome"
+      className="w-full h-screen relative bg-center bg-cover bg-fixed"
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(4, 22, 8, 0.8), rgba(0, 58, 13, 0.6)), url(${welcomeImage})`,
       }}
