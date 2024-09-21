@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import welcomeImage from "../assets/images/welcome/fizjopunkt.jpg";
+import contact from "../assets/images/contact.jpg";
 
 const Welcome = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,13 +17,11 @@ const Welcome = () => {
 
   return (
     <div
-      className="w-full h-screen relative bg-center bg-cover bg-fixed"
+      className="w-full h-screen relative bg-center bg-cover "
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(4, 22, 8, 0.8), rgba(0, 58, 13, 0.6)), url(${welcomeImage})`,
       }}
     >
-      {/* other content */}
-
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-montserrat text-white text-center text-nowrap transition-transform">
         <div
           className={`duration-[1500ms] ease-in-out xl:text-9xl md:text-8xl text-7xl font-bold mb-5 ${
