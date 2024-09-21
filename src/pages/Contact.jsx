@@ -5,6 +5,7 @@ import ContactForm from "../components/ContactForm";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { Clock, MapPin, Phone, Mail } from "lucide-react";
 import Partners from "../components/Partners";
+import contact from "../assets/images/contact.jpg";
 
 const Contact = () => {
   return (
@@ -12,7 +13,13 @@ const Contact = () => {
       <section className="py-0">
         <Navbar />
       </section>
-      <section className="relative contact h-1/3-screen">
+      <section
+        className="relative contact h-1/3-screen"
+        style={{
+          backgroundImage: `linear-gradient(to bottom right, hsla(160, 50%, 20%, 0.90), rgba(14, 35, 28, 0.90) 50%), url(${contact})`,
+          backgroundPosition: "center",
+        }}
+      >
         <div
           className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center font-montserrat text-4xl md:text-6xl font-bold text-nowrap
       `}

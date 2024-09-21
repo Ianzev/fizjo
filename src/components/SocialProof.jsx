@@ -1,5 +1,6 @@
 import React from "react";
 import { socialProof } from "./constants";
+import fizjo from "../assets/images/offers/fizjo.jpg";
 
 const SocialProof = () => {
   return (

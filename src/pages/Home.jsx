@@ -10,6 +10,7 @@ import Locations from "../components/Locations";
 import WhyUs2 from "../components/WhyUs2";
 import SocialProof from "../components/SocialProof";
 import Testimonials from "../components/Testimonials";
+import fizjo from "../assets/images/offers/fizjo.jpg";
 
 const Home = () => {
   return (
@@ -27,7 +28,13 @@ const Home = () => {
       <section className="bg-third">
         <Specialists />
       </section>{" "}
-      <section className="social-proof">
+      <section
+        className="social-proof"
+        style={{
+          backgroundImage: `linear-gradient(to bottom right, hsla(160, 50%, 20%, 0.90), rgba(14, 35, 28, 0.90) 50%), url(${fizjo})`,
+          backgroundPosition: "center 20%",
+        }}
+      >
         <SocialProof />
       </section>
       <section className="">
